@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/MrEkwunife/blog-preview-card)
+- Live Site URL: [Vercel](https://blog-preview-card-cyan-alpha.vercel.app/)
 
 ## My process
 

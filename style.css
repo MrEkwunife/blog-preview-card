@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #f4d04e;
+  --secondary-color: #111111;
+  --grey-color: #6b6b6b;
+  --white-color: #fff;
+}
+
+@font-face {
+  font-family: FigtreeBold;
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: FigtreeMeduim;
+  src: url("./assets/fonts/static/Figtree-Medium.ttf");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "FigtreeBold", sans-serif;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main.container {
+  max-width: 327px;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 8px 8px var(--secondary-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+main.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+}
+
+span {
+  background-color: var(--primary-color);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+p {
+  font-family: "FigtreeMeduim";
+}
+
+h1 + p {
+  color: var(--grey-color);
+}
+
+h1:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+aside div {
+  width: 32px;
+}
+
+aside p {
+  font-weight: 800;
+}
+
+@media (min-width: 780px) {
+  main.container {
+    max-width: 384px;
+  }
+}
